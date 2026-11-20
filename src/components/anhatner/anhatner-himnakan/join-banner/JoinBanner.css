@@ -1,0 +1,6 @@
+.ait-join { background: #022739; color: #fff; text-align: center; padding: 38px 0 31px; font-family: var(--ait-font); }
+.ait-join h2 { margin: 0; font-size: 36px; line-height: 1.2; font-weight: 800; }
+.ait-join p { margin: 18px 0 20px; font-size: 13px; }
+.ait-join__chat { position: fixed; right: 14px; bottom: 120px; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 50%; overflow: hidden; cursor: pointer; z-index: 20; background: none; }
+.ait-join__chat img { display: block; width: 100%; height: 100%; }
+@media (max-width: 760px) { .ait-join h2 { font-size: 26px; } .ait-join { padding: 30px 16px; } }

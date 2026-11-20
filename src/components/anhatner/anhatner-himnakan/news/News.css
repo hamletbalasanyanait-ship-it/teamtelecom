@@ -1,0 +1,24 @@
+.ait-news { background: #fff; padding: 22px 0 0; font-family: var(--ait-font); color: #2c3843; }
+.ait-news__title { margin: 0 0 25px; text-align: center; font-size: 24px; font-weight: 800; color: #2c3843; }
+.ait-news__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 0 -3px; }
+.ait-news__card { display: block; background: #f8f9f9; border: 1px solid #eceeee; border-radius: 8px; overflow: hidden; color: inherit; text-decoration: none; }
+.ait-news__card img { display: block; width: 100%; height: 178px; object-fit: cover; }
+.ait-news__body { padding: 11px 12px 14px; }
+.ait-news__body time { display: block; font-size: 11px; color: #6b7680; }
+.ait-news__body h3 {
+  margin: 8px 0 0; font-size: 13px; line-height: 1.45; font-weight: 700; color: #2c3843;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.ait-news__card:hover h3 { color: #01415f; }
+.ait-news__dots { display: flex; justify-content: center; gap: 14px; margin-top: 56px; }
+.ait-news__dots button { width: 10px; height: 10px; padding: 0; border: 0; border-radius: 50%; background: #e8e5de; cursor: pointer; }
+.ait-news__dots button.is-active { background: #f04d4d; }
+.ait-news__more { position: relative; margin-top: 18px; }
+.ait-news__more hr { margin: 0; border: 0; border-top: 1px solid #d5d9dc; width: calc(100% - 91px); position: relative; top: 7px; }
+.ait-news__more a { position: absolute; right: 0; top: -2px; font-size: 11px; color: #6b7680; background: #fff; padding-left: 8px; }
+.ait-news { padding-bottom: 118px; }
+
+@media (max-width: 760px) {
+  .ait-news__grid { grid-template-columns: 1fr; margin: 0 12px; }
+  .ait-news { padding-bottom: 60px; }
+}

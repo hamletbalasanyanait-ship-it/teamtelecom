@@ -1,0 +1,18 @@
+.ait-myteam { background: #fff; height: 368px; overflow: hidden; font-family: var(--ait-font); color: #2c3843; }
+.ait-myteam__inner { position: relative; height: 100%; }
+.ait-myteam__text { position: absolute; left: 0; top: 52px; width: 440px; z-index: 1; }
+.ait-myteam__text h2 { margin: 0 0 27px; font-size: 40px; line-height: 1.1; font-weight: 800; color: #2c3843; }
+.ait-myteam__text p { margin: 0 0 14px; font-size: 13px; line-height: 1.55; max-width: 430px; }
+.ait-myteam__stores { display: flex; gap: 17px; margin-top: 26px; }
+.ait-myteam__qr { width: 66px; height: 66px; display: block; }
+.ait-myteam__stores div { display: grid; gap: 4px; align-content: start; }
+.ait-myteam__stores div img { width: 130px; height: auto; display: block; }
+.ait-myteam__inner::before { content: ''; position: absolute; left: 105px; right: -1px; top: 0; bottom: 0; background: #86d2da; clip-path: polygon(0 100%, 100% 0, 100% 100%); }
+.ait-myteam__phones { position: absolute; right: 0; bottom: 0; height: 100%; width: auto; max-width: none; }
+
+@media (max-width: 960px) {
+  .ait-myteam { height: auto; padding: 40px 16px; }
+  .ait-myteam__inner { height: auto; }
+  .ait-myteam__text { position: static; width: auto; }
+  .ait-myteam__phones, .ait-myteam__inner::before { display: none; }
+}

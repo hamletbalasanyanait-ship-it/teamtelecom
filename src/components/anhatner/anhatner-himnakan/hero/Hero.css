@@ -1,0 +1,16 @@
+.ait-hero { background: #f6f2e9; height: 408px; font-family: var(--ait-font); overflow: hidden; }
+.ait-hero__inner { position: relative; height: 100%; }
+.ait-hero__text { position: absolute; left: 0; top: 98px; z-index: 1; color: #01415f; }
+.ait-hero__text h1 { margin: 0; max-width: 300px; font-size: 36px; line-height: 1.2; font-weight: 800; color: #01415f; }
+.ait-hero__text p { margin: 24px 0 31px; font-size: 22px; font-weight: 300; color: #01415f; opacity: .8; }
+.ait-hero__img { position: absolute; right: 0; top: 0; height: 100%; width: auto; max-width: 60%; object-fit: contain; object-position: right; }
+.ait-hero__dots { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); display: flex; gap: 14.500px; z-index: 2; }
+.ait-hero__dots button { width: 10px; height: 10px; padding: 0; border: 0; border-radius: 50%; background: #e3ddd2; cursor: pointer; }
+.ait-hero__dots button.is-active { background: #f04d4d; }
+
+@media (max-width: 760px) {
+  .ait-hero { height: 360px; }
+  .ait-hero__text { left: 16px; top: 60px; }
+  .ait-hero__text h1 { font-size: 28px; }
+  .ait-hero__img { opacity: .5; }
+}

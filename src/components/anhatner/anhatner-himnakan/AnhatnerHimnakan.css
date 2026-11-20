@@ -1,0 +1,13 @@
+:root {
+  --ait-font: 'Montserrat', 'Mardoto', 'Noto Sans Armenian', system-ui, sans-serif;
+}
+.ait-container { box-sizing: border-box; width: 100%; max-width: 906px; margin: 0 auto; }
+.ait-btn {
+  display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box;
+  min-width: 207px; height: 32px; padding: 0 24px; border-radius: 16px;
+  background: #f04d4d; color: #fff; font: 700 12px var(--ait-font); text-decoration: none; border: 0; cursor: pointer;
+  transition: background .2s;
+}
+.ait-btn:hover { background: #d93e3e; }
+.ait-btn:focus-visible { outline: 2px solid #01415f; outline-offset: 3px; }
+@media (max-width: 960px) { .ait-container { padding-left: 16px; padding-right: 16px; } }

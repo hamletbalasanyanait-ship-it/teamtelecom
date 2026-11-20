@@ -1,0 +1,37 @@
+.ait-header { font-family: var(--ait-font); }
+:where(.ait-header) ul { list-style: none; margin: 0; padding: 0; }
+:where(.ait-header) a { text-decoration: none; color: inherit; }
+
+.ait-header__top { background: #01415f; color: #fff; height: 29px; font-size: 11px; }
+.ait-header__top-inner { display: flex; justify-content: space-between; align-items: stretch; height: 100%; }
+.ait-header__tabs, .ait-header__tools { display: flex; align-items: stretch; }
+.ait-header__tabs a { display: flex; align-items: center; gap: 6px; height: 100%; padding: 0 15px; }
+.ait-header__tabs a.is-active { background: #1f5e78; }
+.ait-header__eshop { margin-left: 14px; }
+.ait-header__eshop img { width: 14px; height: 14px; border-radius: 3px; display: block; }
+
+.ait-header__tools li { display: flex; align-items: center; }
+.ait-header__tools li + li { position: relative; }
+.ait-header__tools li:nth-child(n+3):not(:last-child)::before,
+.ait-header__tools li:last-child::before {
+  content: ''; position: absolute; left: 0; top: 8px; bottom: 8px; width: 1px; background: rgba(255,255,255,.25);
+}
+.ait-header__tools li:nth-child(2)::before { content: ''; position: absolute; left: 0; top: 8px; bottom: 8px; width: 1px; background: rgba(255,255,255,.25); }
+.ait-header__lang { padding: 0 19px; }
+.ait-header__lang.is-current { color: #f04d4d; }
+.ait-header__icon-btn { background: none; border: 0; color: #fff; padding: 0 20px 0 0; cursor: pointer; display: flex; }
+.ait-header__account { display: flex; align-items: center; gap: 8px; padding-left: 16px; }
+
+.ait-header__nav { background: #fff; height: 43px; box-shadow: 0 1px 0 #e6e6e6; }
+.ait-header__nav-inner { display: flex; align-items: center; height: 100%; position: relative; }
+.ait-header__logo img { display: block; height: 36px; width: auto; }
+.ait-header__links { display: flex; gap: 25px; margin-left: 34px; font-size: 11.5px; white-space: nowrap; color: #2c3843; }
+.ait-header__links a:hover { color: #f04d4d; }
+.ait-header__cart { position: absolute; right: 0; top: 0; height: 43px; display: block; }
+.ait-header__cart img { display: block; height: 100%; width: auto; }
+
+@media (max-width: 960px) {
+  .ait-header__links { display: none; }
+  .ait-header__top-inner { padding: 0 8px; }
+  .ait-header__account { display: none; }
+}
